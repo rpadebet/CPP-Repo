@@ -1,0 +1,509 @@
+#+OPTIONS: toc:nil
+#+STYLE:    <link rel="stylesheet" type="text/css" href="../main.css" />
+
+This is to test todo factors
+
+#+TODO: TODO(@/!) IN-PROGRESS(@/!) | DONE(@/!)
+
+
+* First heading
+* Second heading
+
+* third heading for scheduling a work
+  SCHEDULED: <2018-04-10 Tue>
+
+** third sub heading for a deadline for tax
+   DEADLINE: <2018-04-15 Sun>
+
+**** fourth sub sub heading
+** DONE go back to third heading
+** TODO make this todo
+
+* Insert a link here
+  [[http://www.wikipedia.org][Wikipedia]]
+
+* Insert another file link                                             :work:
+  - Note taken on [2018-04-09 Mon 19:54] \\
+    I love this note taking ability
+  [[~/.emacs][Emacs Init File]]
+<2018-04-07 Sat 09:00>--<2018-04-07 Sat 11:00>
+
+* - [ ] checkbox 2
+  - first
+    - second
+      third
+|------------+-------+------------+----------+-----|
+| Name       | Flag  |      Phone | Function | Age |
+|------------+-------+------------+----------+-----|
+| Rohit      | TRUE  | 2122501412 |      805 |     |
+| rohit2     | FALSE |    2223345 |     7.82 |  23 |
+| insert     | Yes   |        234 |     7488 |  32 |
+| test name  |       |       3454 |        1 |  45 |
+| how wonder | NA    |    2224556 |  2223345 |  32 |
+|            |       |            |    25760 |     |
+|------------+-------+------------+----------+-----|
+#+TBLFM: $4=@I@4$5
+
+** TODO [#A] First and second to do item                        :work:athome:
+This is how test is done
+
+* DONE COMMENT Total of checkboxes [50%]
+  CLOSED: [2018-04-11 Wed 21:11]
+- [X] checkbox1
+- [X] checkbox 2
+- [ ] checkbox 3
+- [ ] checkbox 4
+
+* TODO [ ] checkbox                                                    :work:
+
+  - State "DONE"       from "IN-PROGRESS" [2018-04-09 Mon 23:27]
+  - State "IN-PROGRESS" from "TODO"       [2018-04-09 Mon 23:26] \\
+    Have done enough work
+  * TODO
+
+* TODO
+  SCHEDULED: <2018-04-12 Thu>
+
+* TODO [ ] checkbox 3
+  :PROPERTIES:
+  :[With]:   [Rohit]
+  :Angad:    son
+  :END:
+
+  - State "TODO"       from              [2018-04-09 Mon 23:27] \\
+    Starting a new project
+  - State "DONE"       from "IN-PROGRESS" [2018-04-09 Mon 23:27]
+shopping list [28%]
+- [X] First Item
+- [X] middle check box
+- [ ] second item
+- [ ] third item
+- [ ] fourth item
+- [ ] final check box <2018-04-10 Tue>
+- [ ]
+
+
+
+- 0:00:00 :: 0:00:11
+- 0:00:04 :: 0:00:00
+
+#+TITLE: finding out about Org Mode
+#+AUTHOR: ROHIT PADEBETTU
+#+email: rohit.pittu@gmail.com
+
+
+
+* Related things
+** Weekly review
+   - first comment here
+   - second comment here
+*** Monthly review
+    1. this is a comment
+    2. this is another comment
+    3. very nice numbering with shift left and shift right
+    4. alt enter for
+** Second Weekly review [0%]
+   - [ ] this is definitely needs to be done
+   - [ ] this one maybe
+   - [ ] this was told to be done
+   - [ ] amazing way to do this with M-S-Ret
+*** Second Monthly Review
+
+
+* Final yearly
+** Final Monthly                                                      :Angad:
+   SCHEDULED: <2018-04-15 Sun 18:00> DEADLINE: <2018-04-15 Sun 22:55>
+   :PROPERTIES:
+   :Cost:     $1200
+   :Time:     60 mins
+   :With:     Angad
+   :END:
+*** TODO [#A] Finaly weekly 0:20:18 0:20:24 C-c C-x .            :Work:Rohit:
+*** DONE COMMENT Final daily C-c ;                             :ATTACH:Rohit:
+    :PROPERTIES:
+    :Attachments: Hello.cpp
+    :ID:       C667DF93-93A0-4A55-A056-E7672884CF6A
+    :END:
+*** this is first one 0:09:48
+*** TODO Final hourly<2018-04-09 Mon> C-c .                      :Rohit:Work:
+*** this is second 0:09:30
+
+#+BEGIN: clocktable :maxlevel 2 :scope subtree
+#+CAPTION: Clock summary at [2018-04-10 Tue 23:24]
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+
+#+BEGIN: clocktable :maxlevel 2 :scope subtree
+#+CAPTION: Clock summary at [2018-04-09 Mon 20:30]
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
+
+
+* Headline 1
+
+** small head line
++ test a
++ test 2
++ test 4
+  - test test 4
++ test 56
+*** another headline
+**** another headline
+**** another headline
+
+
+** small head line 2
+
+** small head line 3
+
+* Headline 2
+
+** small head line
+
+** small head line
+
+** small head line 2
+
+** small head line 3
+* Headline 3
+
+** small head line
+
+**
+
+** small head line 2
+
+** small head line 3
+
+
+*
+
+*** TODO 0:07:45 0:07:29 0:07:25
+
+* Work timing
+
+** Get into work
+   :LOGBOOK:
+   CLOCK: [2018-04-09 Mon 21:34]--[2018-04-09 Mon 21:34] =>  0:00
+   :END:
+*** DONE Do some work
+    - State "DONE"       from "IN-PROGRESS" [2018-04-09 Mon 23:29] \\
+      Finished the work so quickly
+    - State "IN-PROGRESS" from "TODO"       [2018-04-09 Mon 23:29] \\
+      Did some work already
+    - State "TODO"       from              [2018-04-09 Mon 23:29] \\
+      Fresh work needs to be done
+** TODO Get out of work
+   - State "TODO"       from              [2018-04-09 Mon 23:30] \\
+     test something[[file:][New file]]
+** Task 2
+   :LOGBOOK:
+   CLOCK: [2018-04-09 Mon 21:35]--[2018-04-09 Mon 21:37] =>  0:02
+   :END:
+** C+Ret will create a list getting out of sub tree
+*** Sub index
+
+#+BEGIN: columnview :hlines 1 :id "lunch"
+
+#+END:
+
+** Task 3
+   :LOGBOOK:
+   CLOCK: [2018-04-09 Mon 21:37]--[2018-04-09 Mon 21:40] =>  0:03
+   :END:
+
+
+[[file+emacs:~/Documents/C++/hello.cpp][My C++ Program]]
+
+[[file+sys:~/Documents/Resumes/Short%20Resume.doc][Resume]]
+
+[[file:Order.cpp][Other prog]]
+
+** DONE this is a new item
+   CLOSED: [2018-04-10 Tue 00:04]
+
+#+BEGIN_SRC R RESULTS:output
+require(dplyr)
+a<-4
+b<-5
+print(a^b)
+#+END_SRC
+
+#+RESULTS:
+: 1024
+
+
+
+#+LANGUAGE: en
+#+CAPTION:  caption of the table
+|column 1 |  column 2 |
+|--------------+----------------|
+
+#+BEGIN_SRC sh :exports both :results output
+ls -al|grep cpp
+
+#+END_SRC
+
+#+RESULTS:
+| -rw-r--r-- | 1 | rohitpittu | staff |  359 | Jun | 17 | 13:27 | BoostTest.cpp   |
+| -rw-r--r-- | 1 | rohitpittu | staff |  314 | Jun | 16 | 13:02 | DebufError.cpp  |
+| -rw-r--r-- | 1 | rohitpittu | staff |  325 | Jun | 16 | 09:10 | Hello.cpp       |
+| -rw-r--r-- | 1 | rohitpittu | staff |  443 | Jun | 16 | 17:53 | NonDebug.cpp    |
+| -rw-r--r-- | 1 | rohitpittu | staff |  155 | Jun |  4 | 23:20 | Order.cpp       |
+| -rw-r--r-- | 1 | rohitpittu | staff | 1529 | Jun | 17 | 16:09 | add_months.cpp  |
+| -rw-r--r-- | 1 | rohitpittu | staff |    3 | Apr |  9 | 23:52 | hello_world.cpp |
+
+
+| -rw-r--r--  | 1 | rohitpittu | staff |  248 | Apr |  9 | 23:14 | New                  | Todo.org     |
+| -rw-r--r--  | 1 | rohitpittu | staff |  509 | Jun | 16 | 18:44 | New                  | Todo.org.gpg |
+| -rw-r--r--  | 1 | rohitpittu | staff | 8578 | Jun | 18 | 22:57 | TestOrgMode.org      |              |
+| -rw-r--r--@ | 1 | rohitpittu | staff | 4991 | Jun | 18 | 22:33 | TestOrgMode.org.html |              |
+
+#+BEGIN_VERSE
+This is verse. How is this different from the rest of the text
+I dont know . but it will probably display differently this time
+Let us find out
+#+END_VERSE
+
+#+BEGIN_EXAMPLE
+This is example. How is this different from the rest of the text
+I dont know . but it will probably display differently this time
+Let us find out
+#+END_EXAMPLE
+
+#+BEGIN_QUOTE
+This is quote. How is this different from the rest of the text
+I dont know . but it will probably display differently this time
+Let us find out
+#+END_QUOTE
+
+
+--------
+Adding a horizontal line above with 5 dasheso
+
+------
+#+name: my-postgres-query
+#+BEGIN_SRC sql :results output :exports both :colnames yes :engine postgresql :database spam :dbhost rohit-lubuntu :dbuser rohit :dbpassword rohit123
+select * from legal_bills
+where date_of_work between '2015-07-01' and '2015-12-31';
+#+END_SRC
+
+#+RESULTS: my-postgres-query
+| invoice_num | invoice_date |   due_date | employee | rate | date_of_work | hours_of_work | amount_billed | description  |                          |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1618 |   2015-08-10 | 2015-08-10 | LET      |  210 |   2015-07-29 |           0.3 |            63 | Meet         | w/MBZ                    | and           | client            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1618 |   2015-08-10 | 2015-08-10 | MBZ      |  375 |   2015-07-29 |             1 |           375 | Meeting      | w/client                 |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1618 |   2015-08-10 | 2015-08-10 | LET      |  210 |   2015-07-31 |           1.2 |           252 | Draft        | Complaint,               | Confidential  | Litigants         | stmnt               | and           | Certification           | of                | Insurance;       | emails    | w/client;       | meet          | w/MBZ     |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-03 |           0.5 |           105 | Revise       | and                      | finalize      | Complaint         | and                 | supporting    | documents;              | emails            | w/client         |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-04 |           0.7 |           147 | Meet         | with                     | client;       | draft,            | finalize            | and           | letter                  | to                | Court            | filing    | Complaint;      | meet          | w/MBZ     |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | MBZ      |  375 |   2015-08-04 |           0.4 |           150 | Review       | Complaint                | for           | divorce           |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | MBZ      |  375 |   2015-08-04 |           0.2 |            75 | Letter       | to                       | Court         | filing            | complaint           | for           | d                       |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-24 |           0.1 |            21 | Emails       | w/client                 |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-25 |           0.1 |            21 | Emails       | w/client                 |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-26 |           1.2 |           252 | Emails       | w/client,                | MBZ;          | draft,            | finalize            | a             | send                    | letter            | to               | spouse    | and             | summons;      | call      | w/process | server           | Court     | Filing   | Fee   | for             | Complaint | for       | Divorce             | Court | Filing    | Fee | for | Parenting | Class | Postage | and | Delivery-Express | Process | Personal | Service | of | Complaint |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-15 |           0.6 |           225 | Receipt      | and                      | review        | email             | from                | client        | re                      | parenting         | time             | and       | bills;respond   | to            | client's  | emails    |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-20 |           0.3 |           112 | Receipt      | and                      | review        | email             | from                | client        | to                      | his               | wife             |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-20 |           0.2 |            75 | Receipt      | and                      | review        | email             | from                | wife          |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-21 |           0.4 |           150 | Receipt      | and                      | review        | email             | from                | client;       | respond                 | to                | same             |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | LET      |  210 |   2015-09-22 |           1.5 |           315 | Review       | emails                   | between       | client            | and                 | MBZ;          | draft                   | Consent           | Order            | and       | letter          | to            | clien     | wife      |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | LET      |  210 |   2015-09-23 |           0.3 |            63 | Finalize     | first                    | draft         | letter            | to                  | wife;ema      | w/MBZ                   |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-23 |           0.3 |           112 | Receipt      | and                      | Review        | email             | from                | client        | re;moving               | forward           |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-23 |           0.7 |           262 | Prepare      | Consent                  | Order         | for               | Parenting           | time          |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | LET      |  210 |   2015-09-24 |           0.4 |            84 | Revise       | letter                   | and           | Consent           | Order;              | emails        | w/client;               | meet              | w/MBZ            |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | LET      |  210 |   2015-09-25 |           0.7 |           147 | Finalize     | and                      | send          | letter            | and                 | Consent       | Order                   | to                | Wife;            | review    | client's        | email;        | review    | letter    | from             | adversary |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-25 |           0.2 |            75 | Review       | letter                   | from          | adversary         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | LET      |  210 |   2015-09-28 |           0.3 |            63 | Review       | letter                   | from          | adversary;        | emails              | w/client;     | meet                    | with              | MBZ              |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-29 |           0.4 |           150 | Telephone    | call                     | with          | adversary         | re                  |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1772 |   2015-10-12 | 2015-10-12 | MBZ      |  375 |   2015-09-29 |           0.6 |           225 | Receipt      | and                      | review        | emails,respond    | by                  | telephone     | to                      | client            |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-01 |           0.4 |           150 | Telephone    | call                     | with          | client            | re;telephone        | call          | with                    | Jerry             | .                | Receipt   | and             | review        | em        |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-02 |           0.4 |            84 | Emails       | with                     | clients       | and               | MBZ;review          | answer        | and                     | counterclaim      | from             | adversary |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-02 |           0.3 |           112 | Receipt      | and                      | review        | email             | to                  | landlord      |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-07 |           0.4 |           150 | Receipt      | and                      | review        | letter            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-07 |           0.3 |           112 | Review       | letter                   | from          | adversary         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-14 |           0.4 |            84 | Review       | email                    | and           | documents         | from                | client;review | Court                   | Notice            |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-15 |           0.1 |            21 | Emails       | with                     | MBZ           |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-15 |          0.25 |            93 | Receipt      | and                      | review        | call              | from                | client        |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-15 |           0.5 |           187 | Receipt      | and                      | review        | CMO               |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-16 |           0.2 |            42 | Review       | proposal                 | CMO;emails    | with              | adversary           |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-16 |           0.4 |           150 | revise       | Case                     | Management    | Order             |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-16 |           0.5 |           187 | Telephone    | call                     | with          | client            | re;Case             | Management    | Conference              |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-19 |           1.1 |           231 | Revise       | proposed                 | CMO;Draft     | finalize          | and                 | send          | letter                  | to                | adversary;review | letter    | from            | adversary     | to        | MBZ;email | client           |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | LET      |  210 |   2015-10-29 |           0.2 |            42 | Review       | Court                    | Notice;emails | with              | client              |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        1850 |   2015-11-03 | 2015-11-03 | MBZ      |  375 |   2015-10-29 |           0.3 |           112 | Receipt      | and                      | Review        | Early             | Settlement          | Panel         |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MISC     |    9 |   2015-10-30 |             1 |             9 | hand         | delivery                 | 19762913      |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-03 |             1 |           210 | Draft        | Discovery;Draft,finalize | and           | send              | letter              | to            | adversary               | serving           | Discovery;email  | to        | client          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-03 |             1 |           375 | Receipt      | and                      | review        | Discovery         | propounded          | on            | adversary               |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-04 |           0.6 |           225 | Receipt      | and                      | review        | Custody           | and                 | General       | interrogatories         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-04 |           0.3 |           112 | Telephone    | call                     | about         | son's             | progress;and        | interfering   | with                    | Parenting         | Time             | and       | mediation       |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-05 |           0.5 |           105 | Calls        | with                     | Court;emails  | with              | MBZ                 | and           | client;emails           | with              | adversary;review | let       | and             | filed         | CMO       |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-06 |           0.1 |            21 | Calendar     | CMO                      | dates         |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-06 |           0.6 |           225 | Receipt      | and                      | Review        | filed             | Case                | Management    | Order                   |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-10 |           0.3 |            63 | Review       | Motion                   | for           | adversary         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-10 |           0.4 |           150 | Receipt      | and                      | Review        | Notice            | of                  | Motion        | Certification           | Order             |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-11 |           0.8 |           168 | Emails       | with                     | client;review | client            | documents           |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-12 |           0.3 |            63 | Call         | with                     | client        | and               | MBZ;                | review        | Counterclaim;           | email             | to               | client    |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-13 |           0.7 |           262 | Prepare      | Answer                   | (Professional | discount)         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-16 |           0.2 |            42 | Review       | Client                   | emails        | and               | write               | up            |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-16 |           0.8 |           300 | Receipt      | and                      | Review        | emails            | re;                 | response      | to                      | Motion,settlement | positions        |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-17 |           0.5 |           105 | Call         | with                     | MBZ           | and               | client;             | review        | clients                 | Settlement        | Proposals;emails | with      | client          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-17 |           0.4 |           150 | Receipt      | and                      | Review        | final             | offer               | on            | Equitable               | Distribution      |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-17 |           0.4 |           150 | Receipt      | and                      | Review        | emails/discuss    | with                | Client        |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-17 |           0.6 |           225 | Receipt      | and                      | Review        | documents         | re;divorce          |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-17 |           0.4 |           150 | Telephone    | call                     | with          | client            | re;                 | future        |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-17 |           0.3 |           112 | Telephone    | call                     | with          | adversary         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-18 |           1.8 |           378 | Review       | Client                   | Emails;email  | to                | Client              | re            | Child                   | Support;run       | Child            | Support   | Guidelines;call | with          | MBZ       | and       | adversary;review | issues    | re       | child | support,alimony | and       | equitable | distribution;emails | with  | adversary |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-18 |           0.3 |           112 | Prepare      | letter                   | to            | advesary          | re;                 | adjournment   |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-18 |           0.4 |           150 | Receipt      | and                      | Review        | email             | to                  | Linda;prepare | email                   | to                | Client           |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-18 |           0.5 |           187 | Receipt      | and                      | Review        | email             | re;                 | Changes       |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-18 |           0.5 |           187 | Receipt      | and                      | Review        | email             | re;                 | Child         | Support                 | amount            |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-18 |           0.5 |           187 | Telephone    | call                     | with          | adversary         |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-19 |           0.6 |           225 | Discuss      | Reconciliation           | with          | Client            | and                 | adversary     |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-20 |           0.6 |           225 | Telephone    | call                     | with          | Client            | re;                 | moving        | forward;                | Receipt           | and              | Review    | emails          | from          | Client    | re;       | moving           | forward   |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-20 |           2.2 |           825 | Meeting      | with                     | Client        |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-20 |           0.3 |           112 | Receipt      | and                      | Review        | emails            | from                | advesary      |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-20 |           0.2 |            75 | Prepare      | letter                   | to            | Court             | requesting          | adjournment   | ;spoke                  | to                | adversary        |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-20 |           0.4 |           150 | Telephone    | call                     | with          | Client            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-23 |           0.3 |            63 | Meet         | with                     | MBZ           | and               | Client;             | emails        | with                    | Client;           | review           | Court     | notices         |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-23 |           0.3 |           112 | Telephone    | Client                   | re;           | Consent           | Order               | and           | mom                     | staying           | across           | the       | street          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-24 |           0.5 |           105 | Emails       | with                     | Client        | and               | MBZ;                | Revise        | letter                  | to                | Court            |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | LET      |  210 |   2015-11-25 |           1.7 |           357 | Emailed      | Client;                  | called        | Client;           | Draft,Finalize,Send | letter        | to                      | adversary;        | Draft            | Consent   | Order;          | meet          | with      | MBZ       |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-25 |           0.4 |           150 | Receipt      | and                      | Review        | emails            | re;                 | Ruhit         | removing                | child             | from             | Marital   | residence       |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-25 |           0.4 |           150 | Revise       | Consent                  | Order         | and               | letter              | to            | clien                   |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-27 |           0.4 |           150 | Receipt      | and                      | Review        | emails            | re;                 | adjournment;  | Receit                  | and               | Review           | email     | re;             | lease         | extension |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-27 |           0.4 |           150 | Telephone    | call                     | with          | Client            | re;                 | mother-in     | law                     | coming,leak       | in               | the       | office          | (professional | discount) |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-27 |           0.2 |            75 | Receipt      | and                      | Review        | email             | re;                 | Visa          |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | MBZ      |  375 |   2015-11-27 |           0.5 |           187 | Receipt      | and                      | Review        | email             | re;                 | Lease         | renewal                 | and               | mother-in-law    | coming    | (professional   | discount)     |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | Disc     |      |   2015-11-30 |               |           600 | Professional | Courtesy                 | Discount      | 11/13,11/27       | (2)                 |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2012 |   2015-12-04 | 2015-12-04 | Disc     |      |   2015-12-16 |               |          2500 | Professional | Courtesy                 | Discount      |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-01 |           0.4 |           150 | Receipt      | and                      | Review        | email             | re;                 | Angel         | not                     | being             | Notice           | of        | Motion          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-03 |          0.25 |            93 | Telephone    | call                     | with          | Client            | re;                 | Status        | of                      | case              |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-22 |             1 |           375 | Receipt      | and                      | Review        | NOM/Certification | and                 | Order         |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-22 |           0.6 |           225 | Receipt      | and                      | Review        | changes           | made                | to            | Certification/Telephone | call              | with             | Client    | about           | Cross         | Motion    | and       | settlement       |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-22 |           0.3 |           112 | Telephone    | call                     | with          | adversary         | about               | putting       | off                     | Motion            |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | LET      |  210 |   2015-12-23 |           5.5 |          1155 | Assist       | with                     | drafting      | Motion;           | prepare             | exhibits;     | Draft                   | CIS;              | emails           | with      | Client;         | call          | with      | Client    |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |             3 |          1125 | Prepare      | Cross                    | Notice        | of                | Motion              | and           | Certification           |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |           0.8 |           300 | Receipt      | and                      | Review        | emails            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |             1 |           375 | Prepare      | Notice                   | of            | Motion            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |           1.1 |           412 | Receipt      | and                      | Review        | emails,telephone  | call                | with          | Client                  |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |           2.5 |           937 | Prepare      | Certification            | Order         |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |           1.2 |           450 | Cull         | Exhibits                 |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-23 |           2.3 |           862 | Finish       | Cross                    | Notice        | of                | Motion.             | Revise        | and                     | go                | over             | with      | Client          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-24 |           0.4 |           150 | Telephone    | call                     | with          | Client            |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-24 |           0.4 |           150 | receipt      | and                      | Review        | email             | about               | experts;      | Hagovsky                | and               | Rosenberg        |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-24 |           0.4 |           150 | Receipt      | and                      | Review        | emails            | from                | Client        | re;                     | Home              | scenario         |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-24 |           0.5 |           187 | Receipt      | and                      | Review        | emails            | re;                 | Cross         | Motion                  |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-25 |           0.4 |           150 | Telephone    | with                     | Client        | about             | emails              |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-26 |           0.7 |           262 | Receipt      | and                      | Review        | Logs              | to                  | add           | to                      | Motion            |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-26 |           2.3 |           862 | Receipt      | and                      | Review        | exhibits;         | Continue            | working       | on                      | Cross             | Motion           | and       | Certification   |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-27 |           1.1 |           412 | Revise       | Certification            |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-27 |           0.4 |           150 | Receipt      | and                      | Review        | emails            | re;                 | Police        | Intervention,Early      | intervention      |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-27 |           1.1 |           412 | Discuss      |                          |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-27 |           1.2 |           450 | Receipt      | and                      | Review        | CIS/Compare       | to                  | wife's        | /Analyze                | and               | Discuss          | with      | Client          |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-27 |           0.8 |           300 | Revise       | letter                   | Brief         | prepared          | by                  | SW            |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | SKW      |  285 |   2015-12-27 |           2.6 |           741 | Legal        | research                 | re:           | Roberts           | Rule;               | draft         | letter                  | brief             | re               | same;     | assist          | with          | finalizin | client    | certification    |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | LET      |  210 |   2015-12-28 |             6 |          1260 | Revise       | and                      | finalize      | Motion,           | Certification       | Order         | Brief                   | and               | CIS;             | call      | with            | Client;       | emails    | with      | Client;          | redact    | exhibits |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | MBZ      |  375 |   2015-12-28 |           0.6 |           225 | receipt      | and                      | Review        | emails            | from                | Client        | re;                     | Case              |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|        2157 |   2016-01-09 | 2016-01-09 | SKW      |  285 |   2015-12-29 |           0.4 |           114 | Assist       | with                     | finalizing    | Reply             |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+|             |              |            |          |      |              |          82.2 |         28456 |              |                          |               |                   |                     |               |                         |                   |                  |           |                 |               |           |           |                  |           |          |       |                 |           |           |                     |       |           |     |     |           |       |         |     |                  |         |          |         |    |           |
+#+TBLFM: @115$7=vsum(@2..@114):: @115$8=vsum(@2..@114)
+
+
+| invoice_num | invoice_date |   due_date | employee | rate | date_of_work | hours_of_work | amount_billed | description                                                                                                                                                                                                                                         |
+|        1618 |   2015-08-10 | 2015-08-10 | LET      |  210 |   2015-07-29 |           0.3 |            63 | Meet w/MBZ and client                                                                                                                                                                                                                               |
+|        1618 |   2015-08-10 | 2015-08-10 | MBZ      |  375 |   2015-07-29 |             1 |           375 | Meeting w/client                                                                                                                                                                                                                                    |
+|        1618 |   2015-08-10 | 2015-08-10 | LET      |  210 |   2015-07-31 |           1.2 |           252 | Draft Complaint, Confidential Litigants stmnt and Certification of Insurance; emails w/client; meet w/MBZ                                                                                                                                           |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-03 |           0.5 |           105 | Revise and finalize Complaint and supporting documents; emails w/client                                                                                                                                                                             |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-04 |           0.7 |           147 | Meet with client; draft, finalize and letter to Court filing Complaint; meet w/MBZ                                                                                                                                                                  |
+|        1684 |   2015-09-03 | 2015-09-03 | MBZ      |  375 |   2015-08-04 |           0.4 |           150 | Review Complaint for divorce                                                                                                                                                                                                                        |
+|        1684 |   2015-09-03 | 2015-09-03 | MBZ      |  375 |   2015-08-04 |           0.2 |            75 | Letter to Court filing complaint for d                                                                                                                                                                                                              |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-24 |           0.1 |            21 | Emails w/client                                                                                                                                                                                                                                     |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-25 |           0.1 |            21 | Emails w/client                                                                                                                                                                                                                                     |
+|        1684 |   2015-09-03 | 2015-09-03 | LET      |  210 |   2015-08-26 |           1.2 |           252 | Emails w/client, MBZ; draft, finalize a send letter to spouse and summons; call w/process server Court Filing Fee for Complaint for Divorce Court Filing Fee for Parenting Class Postage and Delivery-Express Process Personal Service of Complaint |
+|-------------+--------------+------------+----------+------+--------------+---------------+---------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             |              |            |          |      |              |           5.7 |          1461 |                                                                                                                                                                                                                                                     |
+#+TBLFM: @12$7=vsum(@2..@11):: @12$8=vsum(@2..@11)
+
+
+** DONE
+
+** Table got from C-u M-! ls -al
+   :PROPERTIES:
+   :ID:       3C76B2B4-43E9-48FE-9234-BD7AFC064C70
+   :END:
+|-------------+---------------+--------------+------------------+--------+-------|
+| Permissions | User          | Date Modfied | Filename         |   Size | Group |
+|-------------+---------------+--------------+------------------+--------+-------|
+| drwxr-xr-x  | 26 rohitpittu | Apr 11 21:15 | .                |    884 | staff |
+| drwx------@ | 78 rohitpittu | Mar 22 22:00 | ..               |   2652 | staff |
+| -rw-r--r--@ | 1 rohitpittu  | Apr  3 23:53 | .DS_Store        |   6148 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Oct 15 11:54 | DebufError.cpp   |    156 | staff |
+| -rwxr-xr-x  | 1 rohitpittu  | Apr  4 00:05 | DebugError       |   8876 | staff |
+| -rw-r--r--@ | 1 rohitpittu  | Apr  4 00:05 | DebugError.c     |    185 | staff |
+| drwxr-xr-x@ | 3 rohitpittu  | Apr  3 23:53 | DebugError.dSYM  |    102 | staff |
+| -rwxr-xr-x  | 1 rohitpittu  | Oct 15 12:13 | DebugEx          |   8612 | staff |
+| drwxr-xr-x@ | 3 rohitpittu  | Oct 15 11:56 | DebugEx.dSYM     |    102 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  3 23:48 | Hello.cpp        |    308 | staff |
+| -rwxr-xr-x  | 1 rohitpittu  | Apr  3 23:39 | Hello2           |  21640 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  9 23:14 | New Todo.org     |    248 | staff |
+| -rwxr-xr-x  | 1 rohitpittu  | Apr  3 23:48 | Order            |   8672 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  3 23:48 | Order.cpp        |    157 | staff |
+| drwxr-xr-x@ | 3 rohitpittu  | Apr  3 23:48 | Order.dSYM       |    102 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  8 23:47 | TestOrgMode.html |  15500 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr 11 21:11 | TestOrgMode.org  |   5489 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  8 23:40 | TestOrgMode.pdf  | 142017 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  8 23:40 | TestOrgMode.tex  |   2385 | staff |
+| drwxr-xr-x  | 3 rohitpittu  | Apr  9 20:38 | data             |    102 | staff |
+| -rwxr-xr-x  | 1 rohitpittu  | Oct 15 11:32 | hello_world      |  21640 | staff |
+| -rw-r--r--  | 1 rohitpittu  | Apr  9 23:52 | hello_world.cpp  |      3 | staff |
+|-------------+---------------+--------------+------------------+--------+-------|
+|             |               | 142017       | 3                | 245980 |       |
+|-------------+---------------+--------------+------------------+--------+-------|
+#+TBLFM: @24$3=vmax(@2$5..@23$5)::@24$5=vsum(@2..@23)::@24$4=vmin(@2$5..@23$5)
+
+
+
+#+begin_src python :results file
+  import matplotlib, numpy
+
+  matplotlib.use('Agg')
+  import matplotlib.pyplot as plt
+
+  fig=plt.figure(figsize=(5,4))
+  x=numpy.linspace(-15,20)
+  plt.plot(numpy.sin(x)/(x*x))
+  fig.tight_layout()
+  plt.savefig('./python-matplot-fig.png')
+  return './python-matplot-fig.png' # return filename to org-mode
+#+end_src
+
+#+RESULTS:
+[[file:./python-matplot-fig.png]]
+
+
+
+[[file:~/Dropbox/Screenshots/Screenshot%202018-06-18%2022.22.31.png][Picture]]
+
+
+
+
+
+#+tblname: data_table
+|---+---|
+| a | 1 |
+| b | 2 |
+| c | 3 |
+|---+---|
+
+#+begin_src python :var val=2 :var data=data_table
+# Return row specified by val.
+# In non-session mode, use return to return results.
+return(data[val])
+#+end_src
+
+#+RESULTS:
+| c | 3 |
+
