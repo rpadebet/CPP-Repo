@@ -12,7 +12,6 @@ int main()
  	for(auto &entry : boost::filesystem::directory_iterator(path))
  	{
  		std::cout << entry << std::endl;
- 	}
- 
+	}
  	return 0;
  }
